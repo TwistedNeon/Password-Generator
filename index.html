@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="body" style="margin: 0; background-color: black;">
+  <!----------------------------------------------------------------------------------------------------------------------------->
+  
+  <h1 id="header">Password Generator</h1>
+  
+  <!----------------------------------------------------------------------------------------------------------------------------->
+  
+  <textarea id="showPassword" cols="100" rows="20"
+    placeholder="Click submit to generate a password and it will display here! Make sure to enter a password length!"
+    readonly></textarea>
+  
+  <!----------------------------------------------------------------------------------------------------------------------------->
+  
+  <div id="containerOne">
+    <button id="genPassBut">Generate Password!</button>
+    <input type="number" id="passNum" placeholder="Enter your password length!" />
+  </div>
+  
+  <!----------------------------------------------------------------------------------------------------------------------------->
+  
+  <div id="switchContainer">
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    
+    <p class="labels">Special Characters:</p>
+    <label class="switch">
+      <input type="checkbox" id="state1" />
+      <span class="slider round"></span>
+    </label>
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    
+    <p class="labels">Numbers:</p>
+    <label class="switch">
+      <input type="checkbox" id="state2" />
+      <span class="slider round"></span>
+    </label>
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    
+    <p class="labels">LowerCase Letters:</p>
+    <label class="switch">
+      <input type="checkbox" id="state3" />
+      <span class="slider round"></span>
+    </label>
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    
+    <p class="labels">UpperCase Letters:</p>
+    <label class="switch">
+      <input type="checkbox" id="state4" />
+      <span class="slider round"></span>
+    </label>
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+  
+  </div>
+
+  <script src="password.js"></script>
+</body>
+
+</html>
